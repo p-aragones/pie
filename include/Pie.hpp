@@ -31,8 +31,6 @@ class Pie {
         double _pie;
 
         sf::RenderWindow _window;
-        sf::Font _font;
-        sf::Text _pieText;
         sf::RectangleShape _rect;
         sf::CircleShape _circle;
 };
