@@ -25,6 +25,7 @@ Pie::Pie()
     _inside = 0;
     _total = 0;
     _pie = 0;
+    _best = 0;
 }
 
 Pie::~Pie()
@@ -78,8 +79,10 @@ void Pie::insertPoint()
 
     _pie = 4 * ((double) _inside / (double) _total);
 
-    std::cout << std::to_string(_pie) << std::endl;
-
+    if (abs(_pie - M_PI) < abs(_best - M_PI)) {
+        _best = _pie;
+        std::cout << std::to_string(_pie) << std::endl;
+    }
     _window.display();
 }
 

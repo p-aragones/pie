@@ -29,6 +29,7 @@ class Pie {
         int _inside;
         int _total;
         double _pie;
+        double _best;
 
         sf::RenderWindow _window;
         sf::RectangleShape _rect;
